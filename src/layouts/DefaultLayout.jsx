@@ -1,23 +1,16 @@
-import React, {useEffect, useState} from "react";
-import { Footer, Header } from "../sections";
-import { Search } from "../components";
-import {useSelector} from "react-redux";
-import {useBodyFixToggle} from "../hooks";
+import React from "react";
+import {Footer, Header} from "../sections";
 
 
 const DefaultLayout = (props) => {
   const {children} = props
 
-  const { toggleSearchModal } = useSelector((store) => store.search);
-
-  useBodyFixToggle(toggleSearchModal)
 
   return (
     <>
       <Header/>
-      {children}
-      <Footer />
-      {toggleSearchModal && <Search />}
+        {children}
+      <Footer/>
     </>
   );
 };
