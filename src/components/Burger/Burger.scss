@@ -1,13 +1,13 @@
-.burger-menu-wrap {
+.Burger {
   display: none;
   margin-left: 24px;
 
-  @include md-block{
+  @include sm-block{
     display: block;
   };
 
 }
-.burger-menu {
+.Burger-menu {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -27,7 +27,7 @@
     background-color: transparent;
   }
 }
-.burger-menu__bar{
+.Burger-menu__bar{
   height: 3px;
   background-color: $black;
   width: 100%;
@@ -42,19 +42,19 @@
 .js-burger-menu-active {
 
 }
-.menuMobActive .burger-menu__bar:first-child {
-  transform: translate(0, 5px);
+.menuMobActive .Burger-menu__bar:first-child {
+  transform: translate(0, 7px);
 }
-.menuMobActive .burger-menu__bar:nth-child(2) {
+.menuMobActive .Burger-menu__bar:nth-child(2) {
   width: 0;
 }
-.menuMobActive .burger-menu__bar:last-child {
-  transform: translate(0, -5px);
+.menuMobActive .Burger-menu__bar:last-child {
+  transform: translate(0, -7px);
 }
 
-.menuMobActive .burger-menu__bar:first-child {
-  transform: translate(0, 5px) rotate(45deg);
+.menuMobActive .Burger-menu__bar:first-child {
+  transform: translate(0, 7px) rotate(45deg);
 }
-.menuMobActive .burger-menu__bar:last-child {
-  transform: translate(0, -5px) rotate(-45deg);
+.menuMobActive .Burger-menu__bar:last-child {
+  transform: translate(0, -7px) rotate(-45deg);
 }

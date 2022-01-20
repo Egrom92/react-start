@@ -1,5 +1,5 @@
 import React from "react";
-import {LogoSmall} from '../../svg'
+import {LogoIco} from '../../svg'
 
 const Logo = (props) => {
   const {className} = props
@@ -8,7 +8,7 @@ const Logo = (props) => {
 
   return (
     <a href='/' className={classes}>
-      <LogoSmall className='LogoSmall'/>
+      <LogoIco className='LogoIco'/>
     </a>
   );
 };

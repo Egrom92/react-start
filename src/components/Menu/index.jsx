@@ -2,12 +2,14 @@ import { NavLink } from 'react-router-dom';
 import React from "react";
 
 const Menu = (props) => {
-  const {menu} = props;
+  const {className, menu} = props
+
+  const classes = 'Menu ' + (className || '');
 
   if (!menu) return null;
 
   return (
-    <nav className="menu">
+    <nav className={classes}>
       <ul>
         {menu.map((el) => (
           <li key={el.id}>

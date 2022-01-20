@@ -1,4 +1,4 @@
-import {Logo, SearchButton, MobileMenu } from '../../components';
+import {Logo, MobileMenu } from '../../components';
 import React from "react";
 
 const Header = (props) => {
@@ -9,7 +9,6 @@ const Header = (props) => {
         <div className="container">
           <div className="Header">
             <Logo className='Header__Logo'/>
-            <SearchButton className='Header__SearchButton'/>
           </div>
         </div>
       </header>
