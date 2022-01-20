@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import React from "react";
 
-const Menu = () => {
-  const menu = [];
+const Menu = (props) => {
+  const {menu} = props;
 
   if (!menu) return null;
 
