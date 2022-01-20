@@ -1,0 +1,28 @@
+@import './scss/smart-grid.scss';
+@import 'scss/config';
+@import './svg/svg';
+
+//@import './fonts/main.scss';
+
+@import './scss/mixins.scss';
+@import './scss/base.scss';
+
+// Components
+@import './components/DebugGrid/DebugGrid.scss';
+@import './components/Logo/Logo.scss';
+@import './components/Menu/Menu.scss';
+@import './components/Burger/Burger.scss';
+@import './components/Checkbox/Checkbox.scss';
+@import './components/Content/Content.scss';
+
+
+
+
+// Sections
+@import './sections/Header/Header.scss';
+@import './sections/Footer/Footer.scss';
+
+
+// Pages
+@import './pages/HomePage/HomePage.scss';
+
