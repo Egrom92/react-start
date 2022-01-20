@@ -5,7 +5,9 @@ const HomePage = (props) => {
 
   return (
     <DefaultLayout>
-      <h1>HomePage</h1>
+      <h1>
+        HomePage
+      </h1>
     </DefaultLayout>
   );
 };
