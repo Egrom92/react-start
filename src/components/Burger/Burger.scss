@@ -1,3 +1,7 @@
+$burgerBar: 2px;
+$burgerBarOpen: 8px;
+$burgerBarColor: $black;
+
 .Burger {
   display: none;
   margin-left: 24px;
@@ -28,7 +32,7 @@
   }
 }
 .Burger-menu__bar{
-  height: 3px;
+  height: $burgerBar;
   background-color: $black;
   width: 100%;
   transition: 0.3s all ease-out;
@@ -43,18 +47,18 @@
 
 }
 .menuMobActive .Burger-menu__bar:first-child {
-  transform: translate(0, 7px);
+  transform: translate(0, $burgerBarOpen);
 }
 .menuMobActive .Burger-menu__bar:nth-child(2) {
   width: 0;
 }
 .menuMobActive .Burger-menu__bar:last-child {
-  transform: translate(0, -7px);
+  transform: translate(0, -$burgerBarOpen);
 }
 
 .menuMobActive .Burger-menu__bar:first-child {
-  transform: translate(0, 7px) rotate(45deg);
+  transform: translate(0, $burgerBarOpen) rotate(45deg);
 }
 .menuMobActive .Burger-menu__bar:last-child {
-  transform: translate(0, -7px) rotate(-45deg);
+  transform: translate(0, -$burgerBarOpen) rotate(-45deg);
 }
